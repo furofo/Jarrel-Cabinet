@@ -1,0 +1,659 @@
+/* this is to reset background browser padding back to 0 to prevent weird issues across browsers */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+smbackground-image,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  verticbackground-backgroundign: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* this is to reset background browser padding back to 0 to prevent weird issues across browsers */
+
+/*website styling starts here */
+
+.sitemenu {
+  /* this is navigation wrapper for background buttons in site menu at the top */
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+  padding-top: 40px;
+  width: 100%;
+  height: 160px;
+}
+.navbarbutt {
+  /* this is button menu in far right with underline underneath will make a bootstrap like menu for mobile */
+  float: right;
+  background-color: transparent;
+  margin-right: 10px;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-color: rgb(248, 241, 241);
+  border-style: none none solid none;
+}
+
+.navbarbutt:hover {
+  background-color: rgb(173, 216, 230);
+  transition: 0.3s;
+}
+
+.marginright {
+  /* to adjust righmost menubutton currently home to give a little space on the right side */
+  margin-right: 50px;
+}
+
+/*body styling */
+
+#img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  z-index: 2;
+}
+
+/* used to clear other classes that use floats */
+.clear {
+  clear: both;
+}
+
+/* animations related to main background images for smooth transition" */
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.homepageoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  pointer-events: none;
+  opacity: 0.45;
+  background: black;
+}
+.homepageimgwrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgb(204, 204, 204);
+  z-index: -11;
+  pointer-events: none;
+}
+#img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-direction: alternate;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* default mobile menu is none media query to set to visible when on mobile  this i hamburger menu */
+
+.mobilemenu {
+  display: none;
+}
+
+/*logo styling */
+
+.logo {
+  width: 500px;
+  height: 500px;
+  float: left;
+}
+
+.imglogo {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  z-index: 3;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  background-color: rgb(178, 174, 174);
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.icon {
+  display: block;
+  float: right;
+}
+
+/* Add a grey background color on mouse-over */
+
+/* styling for contact page */
+.headercontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  overflow: hidden;
+  background: rgb(
+    204,
+    204,
+    204
+  ); /* Fallback for older browsers without RGBA-support */
+  background: rgba(204, 204, 204, 0.5);
+  opacity: 1;
+  z-index: -11;
+}
+
+.contactHeader {
+  width: 110%;
+  background-color: grey;
+  z-index: -1;
+}
+
+.headercontaineroverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.45;
+  z-index: -5;
+  pointer-events: none;
+}
+.contactlogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .7;
+}
+
+.navbarbuttcontact {
+  margin-top: 30px;
+  z-index: 1000;
+}
+
+.contactwrap {
+  /* this is  a wrapper for part that says contact us will position actual content as absolute relative to this */
+  position: relative;
+
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+  width: 100%;
+  height: 150px;
+  background-image: linear-gradient(
+    Grey,
+    lightgrey
+  ); /* to provide a sort of overlay to make white text more readable */
+}
+
+.contacttxt {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 50px;
+  padding-left: 30px;
+  font-size: 40px;
+  color: white; /* part that reads contact us on contact page */
+}
+
+.contactimg {
+  width: 100%;
+  height: 150px;
+  position: absolute; /* contact image in tthe background */
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+.contactform {
+  /* wrapper div for input form and googel map on contact page */
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(128, 66, 66, 0.1) 50%,
+    hsla(0, 61%, 35%, 0)
+  );
+}
+
+.contactformtxt {
+  padding-top: 30px;
+  text-align: center; /* this is text above form and map */
+  font-size: 30px;
+}
+
+.contactforminput {
+  padding-top: 45px;
+  padding-left: 30px;
+  font-weight: bold; /* form text styling */
+  font-size: 20px;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 12px 20px; /* input text styling */
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.map {
+  width: 40%;
+  float: right;
+}
+
+.formfloat {
+  float: left;
+  width: 45%;
+  padding-left: 60px;
+}
+
+.iframemap {
+  padding-top: 50px;
+  padding-left: 20px;
+
+  width: 70%;
+}
+
+.submitbtn {
+  margin-top: 10px;
+  font-size: 23px;
+  border-radius: 15px;
+}
+
+.submitbtn:hover {
+  background-color: lightblue;
+  transition: all 0.7s;
+}
+
+.contactinfo {
+  font-size: 32px;
+  padding-top: 20px;
+}
+
+.contactinfo p {
+  font-size: 24px;
+}
+
+.contactinfowrapper {
+  width: 550px;
+
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.blue {
+  color: blue;
+}
+
+.toppcontact {
+  padding-top: 20px;
+}
+
+.aboutbodystyle {
+  min-height: 100%;
+  font-size: 30px;
+}
+.aboutparagraph {
+  text-align: center; 
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.aboutbodystyle p {
+  padding-top: 40px;
+  padding-right: 20px;
+}
+.aboutwrapper {
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(128, 66, 66, 0.1) 50%,
+    hsla(0, 61%, 35%, 0)
+  );
+}
+
+.aboutimgwrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.aboutpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 40px;
+}
+
+.imgwrapper {
+  display: flex;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(128, 66, 66, 0.1) 50%,
+    hsla(0, 61%, 35%, 0)
+  ); /*flex box styling 4 rows on desktop 2 on tablet one  on mobile */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#gallerydivimg {
+  width: 20%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  padding-top: 40px;
+}
+.galleryimg {
+  width: 100%;
+}
+
+.farrightimg {
+  padding-right: 0;
+}
+
+#everythingwrapper {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#overlay {
+  display: none;
+  background: rgb(
+    204,
+    204,
+    204
+  ); /* Fallback for older browsers without RGBA-support */
+  background: rgba(204, 204, 204, 0.5);
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+#closebtn {
+  width: 5em;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+
+  background-color: rgb(46, 46, 46);
+  color: white;
+  font-size: 25px;
+}
+
+#galleryonclick {
+  width: 35%;
+  z-index: 2000;
+  opacity: 1;
+}
+/* media queries here */
+@media only screen and (max-width: 1050px) {
+  .navbarbutt {
+    font-size: 11px;
+  }
+
+  .aboutparagraph {
+    font-size: 24px;
+  }
+
+  #gallerydivimg {
+    width: 40%; /* 2 images on tablet sized */
+  }
+}
+@media only screen and (max-width: 950px) {
+  .navbarbutt {
+    display: none;
+  }
+  .mobilemenu {
+    display: block;
+
+    margin-bottom: -60px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    font-size: 64px;
+  }
+
+  .imglogo {
+    width: 150px;
+    height: 150px;
+    
+  }
+
+  #img2 {
+    width: 300%;
+  }
+
+  .contactformtxt {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  input[type="text"] {
+    width: 70%;
+  }
+  .map {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .iframemap {
+    width: 65%;
+    padding-left: 30px;
+    padding-right: 0;
+  }
+
+  .formfloat {
+    padding: 0 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactinfowrapper {
+    padding-top: 30px;
+    width: 390px;
+  }
+
+  .contactinfowrapper p {
+    font-size: 18px;
+  }
+
+  .aboutpic {
+    float: none;
+    display: block; /*center about pic on mobile */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  
+
+  #gallerydivimg {
+    width: 70%; /* one image on mobile */
+  }
+
+  #galleryonclick {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .logo {
+    width: 250px;
+    height: 250px;
+  }
+  .imglogo {
+    width: 150x;
+    height: 150px;
+  }
+}
